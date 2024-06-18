@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./style.css">
+
+
+    </head>
+ <body>
+        <div class="container">
+       <div>
+    <h1 class = "header_text"> I'm sorryyy baby. Apologise me for once please.. SORRY accepted?</h1>
+    <h1 class = "header_text"> okayy! you love me kadha?</h1>
+       </div>
+       <div class="gif_container">
+        <img src="kenss.gif" alt="Cute animated illustration">
+           </div>
+       <div class= "buttons">
+        <button class="btn" id = "yessyessbabyButton" onclick="nextPage()">Yessbabyy</button>
+        <button class="btn" id ="yesButton" onmouseover="moveButton()" onclick="moveButton()">yes</button> 
+        <script>
+            function nextPage() {
+                window.location.href = "yes.html";
+            }
+
+            function moveButton() {
+                var x = Math.random() * (window.innerWidth - document.getElementById('yesButton').offsetWidth) - 85;
+                var y = Math.random() * (window.innerHeight - document.getElementById('yesButton').offsetHeight) - 48;
+                document.getElementById('yesButton').style.left = `${x}px`;
+                document.getElementById('yesButton').style.top = `${y}px`;
+            }
+        </script>
+       </div>   
+        </div>     
+ </body>
+</html>
